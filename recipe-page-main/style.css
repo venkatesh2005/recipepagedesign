@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* Primary colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--eggshell);
+}
+
+.main-container {
+    max-width: 750px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.container {
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 700;
+    font-style: bold;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--rose-white);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+ol>li,
+ul>li {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+li::marker {
+    font-weight: 700;
+    padding: 10px;
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    margin: 10px 0;
+    font-family: "Young Serif", serif;
+    color: var(--dark-raspberry);
+}
+
+table {
+    margin: 10px 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+td {
+    padding: 10px 0 10px 20px;
+}
+
+td:nth-child(2) {
+    font-family: "Young Serif", serif;
+    font-weight: 700;
+    color: var(--dark-raspberry);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 800px) {
+
+    .main-container {
+        border-radius: 0;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+    img{
+        display: none;
+    }
+
+    .imgmob {
+        margin: 0;
+        display: block !important;
+        width: 100%;
+        border-radius: 0;
+
+    }
+}
